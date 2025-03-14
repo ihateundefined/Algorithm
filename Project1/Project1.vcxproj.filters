@@ -21,5 +21,8 @@
     <ClCompile Include="순차검색.cpp">
       <Filter>소스 파일\250314</Filter>
     </ClCompile>
+    <ClCompile Include="이분검색.cpp">
+      <Filter>소스 파일\250314</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
