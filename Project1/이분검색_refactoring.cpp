@@ -55,43 +55,67 @@ TestCase는 다음과 같다.
 
 #include <stdio.h>
 
-void main()
-{
-    int arr[] = { 2,6,13,19,21,21,23,29,35,48,62,89,90,95,99,102,109,208,629 };
-    // arr[] 배열의 크기 구하기
-    unsigned int size = sizeof(arr)/sizeof(arr[0]);
-    // 찾으려고 하는 값
-    int key = 629;
-
-    // 2의 index == 0
+int BinarySearch(int* pArr, int nSize, int nkey) {
     unsigned int lower = 0;
-    // 629 index 구하기
-    unsigned int upper = size - 1;
-    // 일단 mid를 0으로 초기화
+    unsigned int upper = nSize - 1;
     unsigned int mid = 0;
 
-    // 무한 루프
-    // for (;;)
-    while (true)
+    //while (true)
+    //{
+    //    mid = (lower + upper) / 2;
+
+    //    if (pArr[mid] == nkey) {
+    //        return mid;
+    //    }
+
+    //    if (pArr[mid] > nkey) {
+    //        upper = mid - 1;
+    //    }
+    //    else {
+    //        lower = mid + 1;
+    //    }
+
+    //    if (upper < lower) {
+    //        return -1;
+    //    }
+    //}
+
+    while (lower <= upper)
     {
-        // 중간 위치 index 구하기
         mid = (lower + upper) / 2;
 
-        if (arr[mid] == key) {
-            printf("%d번째에 있습니다.\n", mid + 1 );
-            return;
+        if (pArr[mid] == nkey) {
+            return mid;
         }
 
-        if (arr[mid] > key) {
+        if (pArr[mid] > nkey) {
             upper = mid - 1;
         }
         else {
             lower = mid + 1;
         }
+    }
+    return -1;
+}
 
-        if (upper < lower) {
-            printf("해당 값을 찾을 수 없습니다.\n");
-            return;
-        }
+
+void main()
+{
+    int arr[] = { 2,6,13,19,21,21,23,29,35,48,62,89,90,95,99,102,109,208,629 };
+    unsigned int size = sizeof(arr)/sizeof(arr[0]);
+    int key;
+
+    printf("검색하고자 하는 수험번호를 입력하세요 >> ");
+    scanf_s("%d", &key);
+
+    int idx = BinarySearch(arr, size, key);
+
+    if (idx == -1) {
+        printf("해당 값을 찾을 수 없습니다.\n");
+        printf("아쉽지만, 불합격하셨습니다.\n");
+    }
+    else {
+        printf("축하합니다. 합격하셨습니다.\n");
+        printf("%d번째에 있습니다.\n", idx + 1);
     }
 }

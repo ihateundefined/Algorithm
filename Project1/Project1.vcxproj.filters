@@ -16,13 +16,19 @@
     <Filter Include="소스 파일\250314">
       <UniqueIdentifier>{79bfbf5c-b14a-4ddd-874f-2ca3d9762896}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250318">
+      <UniqueIdentifier>{01c21748-28c5-4bc1-9a01-a36d75217663}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
       <Filter>소스 파일\250314</Filter>
     </ClCompile>
     <ClCompile Include="이분검색.cpp">
-      <Filter>소스 파일\250314</Filter>
+      <Filter>소스 파일\250318</Filter>
+    </ClCompile>
+    <ClCompile Include="이분검색_refactoring.cpp">
+      <Filter>소스 파일\250318</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
