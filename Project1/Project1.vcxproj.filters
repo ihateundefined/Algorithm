@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\250318">
       <UniqueIdentifier>{01c21748-28c5-4bc1-9a01-a36d75217663}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250320">
+      <UniqueIdentifier>{d7f866cf-0a06-4db1-8ef7-731a24c09eed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -29,6 +32,12 @@
     </ClCompile>
     <ClCompile Include="이분검색_refactoring.cpp">
       <Filter>소스 파일\250318</Filter>
+    </ClCompile>
+    <ClCompile Include="해시_문제1.cpp">
+      <Filter>소스 파일\250320</Filter>
+    </ClCompile>
+    <ClCompile Include="해시_문제2.cpp">
+      <Filter>소스 파일\250320</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
