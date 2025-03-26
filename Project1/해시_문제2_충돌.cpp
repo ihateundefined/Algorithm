@@ -13,7 +13,7 @@
 #include <string.h>
 
 #define BK 10
-#define SL 1
+#define SL 4
 
 int hashtable[BK][SL];
 
@@ -25,16 +25,31 @@ void InsertValue(int nKey)
 {
 	int bucket = Hash(nKey);
 
-	if (hashtable[bucket][0] == 0)
+	// 각각의 슬롯마다 비어있는지 확인하고, 값을 넣어준다
+	// for문 사용
+	for (int i = 0; i < SL; i++)
 	{
-		hashtable[bucket][0] = nKey;
+		if (hashtable[bucket][i] == 0)
+		{
+			hashtable[bucket][i] = nKey;
+			break;
+		}
 	}
 }
 
 int FindValue(int nKey)
 {
 	int bucket = Hash(nKey);
-	return (hashtable[bucket][0] == nKey);
+	for (int i = 0; i < SL; i++)
+	{
+		if (hashtable[bucket][i] == nKey)
+		{
+			// 일치하면 1 true를 return
+			return 1;
+		}
+	}
+	// 그렇지 않으면 0을 return
+	return 0;
 }
 
 void main()
@@ -42,7 +57,7 @@ void main()
 	int key = 0;
 	memset(hashtable, 0, sizeof(hashtable));
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < SL; i++)
 	{
 		printf("%d번째 값을 입력하세요 >> ", i + 1);
 		scanf_s("%d", &key);

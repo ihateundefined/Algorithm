@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\250320">
       <UniqueIdentifier>{d7f866cf-0a06-4db1-8ef7-731a24c09eed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250326">
+      <UniqueIdentifier>{71aedbde-33d5-438e-8235-6ee79c9091e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -36,8 +39,14 @@
     <ClCompile Include="해시_문제1.cpp">
       <Filter>소스 파일\250320</Filter>
     </ClCompile>
-    <ClCompile Include="해시_문제2.cpp">
-      <Filter>소스 파일\250320</Filter>
+    <ClCompile Include="해시_문제2_충돌.cpp">
+      <Filter>소스 파일\250326</Filter>
+    </ClCompile>
+    <ClCompile Include="해시_문제3_버킷이동.cpp">
+      <Filter>소스 파일\250326</Filter>
+    </ClCompile>
+    <ClCompile Include="동적배열.cpp">
+      <Filter>소스 파일\250326</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
