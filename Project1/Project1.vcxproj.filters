@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\250326">
       <UniqueIdentifier>{71aedbde-33d5-438e-8235-6ee79c9091e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250328">
+      <UniqueIdentifier>{f32fe1dc-95d0-4416-ab52-1690f6d8a844}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -45,8 +48,11 @@
     <ClCompile Include="해시_문제3_버킷이동.cpp">
       <Filter>소스 파일\250326</Filter>
     </ClCompile>
-    <ClCompile Include="동적배열.cpp">
+    <ClCompile Include="정적배열.cpp">
       <Filter>소스 파일\250326</Filter>
+    </ClCompile>
+    <ClCompile Include="동적배열.cpp">
+      <Filter>소스 파일\250328</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
