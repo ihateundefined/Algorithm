@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\250328">
       <UniqueIdentifier>{f32fe1dc-95d0-4416-ab52-1690f6d8a844}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250401">
+      <UniqueIdentifier>{d76444aa-d316-484d-a3ee-d200f0274941}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -53,6 +56,9 @@
     </ClCompile>
     <ClCompile Include="동적배열.cpp">
       <Filter>소스 파일\250328</Filter>
+    </ClCompile>
+    <ClCompile Include="250401_버블정렬.cpp">
+      <Filter>소스 파일\250401</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
