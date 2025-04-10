@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\250407">
       <UniqueIdentifier>{40752411-24e9-423b-a68f-0fda54954593}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250410">
+      <UniqueIdentifier>{5a407885-7c16-40b9-a535-9856d197894d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="250407_선택정렬.cpp">
       <Filter>소스 파일\250407</Filter>
+    </ClCompile>
+    <ClCompile Include="250410_퀵정렬.cpp">
+      <Filter>소스 파일\250410</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
