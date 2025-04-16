@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\250415">
       <UniqueIdentifier>{d816391b-b1e2-4640-a8f9-272ae6b6a1d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\250416">
+      <UniqueIdentifier>{b1fb80f9-4159-4a17-a2c0-8356f5913628}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="순차검색.cpp">
@@ -80,6 +83,9 @@
     </ClCompile>
     <ClCompile Include="이중연결리스트.cpp">
       <Filter>소스 파일\250415</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
+      <Filter>소스 파일\250416</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
